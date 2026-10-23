@@ -1,0 +1,21 @@
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración de IDE (VS Code, IntelliJ)
+.vscode/
+.idea/
+*.iml
+
+# Archivos temporales de Word (¡Muy importante!)
+~$*.docx
+
+# Compilados de Java / Spring Boot
+target/
+*.class
+
+# Dependencias de Node / React
+node_modules/
+
+# Archivos de entorno (Nunca subas contraseñas)
+.env

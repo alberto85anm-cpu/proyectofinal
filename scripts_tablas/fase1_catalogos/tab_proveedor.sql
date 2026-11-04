@@ -1,3 +1,5 @@
+
+
 CREATE TABLE tab_proveedor(
 id_proveedor bigserial primary key,
 nombre varchar(150) not null unique,
@@ -13,5 +15,8 @@ updated_at timestamptz not null default now()
 COMMENT ON TABLE  tab_proveedor          IS 'Catálogo de proveedores de refacciones y servicios externos.';
 COMMENT ON COLUMN tab_proveedor.email    IS 'Correo electrónico de contacto (formato validado).';
 COMMENT ON COLUMN tab_proveedor.activo   IS 'TRUE = proveedor habilitado para compras.';
+COMMENT ON COLUMN tab_proveedor.telefono IS 'Teléfono sin formato (solo dígitos y guiones).';
+
+
 
 create index idx_proveedor_activo on tab_proveedor(activo) where activo =TRUE;
